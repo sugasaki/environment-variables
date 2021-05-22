@@ -1,5 +1,5 @@
 version: 1.0
-runtime: node12
+runtime: node 12
 build:
  commands:
   build:
