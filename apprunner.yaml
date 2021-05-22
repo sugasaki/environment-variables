@@ -1,9 +1,11 @@
 version: 1.0
-runtime: nodejs12 
+runtime: nodejs12
 build:
   commands:
-    build:        
-      - yarn install && yarn build
+    pre-build:
+      - yarn install
+    build:
+      - yarn build
   env:
     - name: DDB_AWS_REGION
       value: "us-east-1"
@@ -12,8 +14,9 @@ build:
     - name: NEXT_PUBLIC_ENV_LOCAL_VARIABLE
       value: "public_variable_from_env_local"
 run:
+  runtime-version: 12.18.4
   command: yarn start
-  network: 
+  network:
     port: 3000
   env:
     - name: DDB_AWS_REGION
