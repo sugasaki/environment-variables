@@ -1,0 +1,13 @@
+version: 1.0
+runtime: node12
+build:
+ commands:
+  build:
+  - yarn install && yarn build
+run:
+ command: yarn start
+ network:
+   port: 3000
+env:
+- name: DDB_AWS_REGION
+  value: "us-east-1" 

@@ -58,6 +58,15 @@ const IndexPage = () => (
               <Code>.env.production</Code>
             </td>
           </tr>
+
+          <tr>
+            <td>DDB_AWS_REGION</td>
+            <td>{process.env.DDB_AWS_REGION}</td>
+            <td>
+              <Code>.env</Code>
+            </td>
+          </tr>
+
         </tbody>
       </table>
       <p>
