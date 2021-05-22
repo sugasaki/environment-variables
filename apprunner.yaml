@@ -11,5 +11,7 @@ run:
   env:
     - name: DDB_AWS_REGION
       value: "us-east-1"
+    - name: NEXT_PUBLIC_DDB_AWS_REGION
+      value: "us-east-1"
     - name: NEXT_PUBLIC_ENV_LOCAL_VARIABLE
       value: "public_variable_from_env_local"

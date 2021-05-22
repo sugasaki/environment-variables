@@ -60,8 +60,8 @@ const IndexPage = () => (
           </tr>
 
           <tr>
-            <td>DDB_AWS_REGION</td>
-            <td>{process.env.DDB_AWS_REGION}</td>
+            <td>NEXT_PUBLIC_DDB_AWS_REGION</td>
+            <td>{process.env.NEXT_PUBLIC_DDB_AWS_REGION}</td>
             <td>
               <Code>.env</Code>
             </td>
